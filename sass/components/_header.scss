@@ -1,0 +1,54 @@
+#header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .menu{
+        min-height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 2vh 5vw;
+
+        img{
+            height: 10vh;
+        }
+        nav{
+            width: 45vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.1rem;           
+        }
+        a{
+            color: #EE3325;
+            margin: 5px;
+        }
+    }
+    .banner{ 
+        min-height: 85vh; 
+        min-width: 100%;      
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 5vw;
+        background-image: url(assets/femaleheader.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        p{
+            width: 35vw;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color:#FFF;
+        }
+    }
+    .banner:after{        
+        content:"";
+        position: absolute;
+        width: 100%;
+        min-height: 45%;
+        top: 55%;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(0,131,202,0) 0%, rgba(0,131,202,0.62) 40%,  rgba(0,131,202,1) 80%,  rgba(0,131,202,1) 90%, rgba(0,131,202,1) 100%);
+    }    
+}

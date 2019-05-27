@@ -1,0 +1,30 @@
+.products{
+    display: flex;
+    flex-direction: column;
+    padding: 15vh 5vw;
+    background-color: #0083CA;
+    color:#fff;
+
+    h1{
+        font-size: 2rem;
+    }
+    .productsBlock{
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        
+        div{
+            width: 13vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            margin: 10vh 0;
+            
+            img{
+                height: 40%;        
+            }
+        }
+    }
+}
