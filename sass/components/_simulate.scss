@@ -1,0 +1,38 @@
+.simulate{
+	display: flex;
+	justify-content: space-between;
+	padding: 15vh 5vw;
+	color: #fff;;
+	background-color: #0083CA;
+	.convert{
+		width: 55vw;
+		background-color:white;
+	}
+	div{
+		width: 25vw;
+		display: flex;
+		flex-flow: column;
+
+		h1{
+			font-size: 2rem;
+		}
+		p{
+			font-size: 1.1rem;
+			font-weight: 600;
+			margin-top: 6vh;
+		}
+		span{
+			display: flex;
+			align-items: center;
+			font-size: 1.1rem;			
+			margin-top: 4vh;
+
+			img{
+				width: 40px;
+				height: 40px;
+				margin-right: 2vw;
+				border-radius: 50%;
+			}
+		}
+	}
+}
