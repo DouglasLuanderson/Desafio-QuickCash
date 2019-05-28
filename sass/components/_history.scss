@@ -1,0 +1,34 @@
+.history{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15vh 5vw;
+    position: relative;
+    overflow: hidden;
+	color: #fff;
+    background-color: #0083CA;
+    
+    .slide{
+        width: 55vw;
+        min-height: 80vh;
+		background-color:white;
+    }
+    p{  
+        width: 25vw;
+        font-size: 1.2rem;
+        font-weight: 900;
+        font-style: italic;
+        color: #fff;
+        z-index: 10;
+    }
+    .ballbig{
+        min-width: 50vw;        
+        min-height: 100vh;
+        position: absolute;
+        right: -10vw;
+        border-radius: 50%;
+        background-color: #FFF;
+        opacity: 0.1;
+    }
+    
+}
