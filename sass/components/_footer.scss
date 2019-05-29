@@ -1,0 +1,36 @@
+.footer{
+    min-width: 40vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EE3325;
+
+    .footer-blockimage{
+        width: 30vw;
+
+        img{
+            width: 100%;
+            // height: 100%;
+        }
+    }
+    .footer-blockaddress, .footer-blocklinks{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .footer-blockcopyright{
+        
+    }
+    .footer-blocklinks{
+        width: 15vw;
+        line-height: 4vh;
+        background-color: blue;
+        a{
+            color: #fff;
+        }
+        .link{
+            margin-bottom: 5vh;
+        }
+    }
+}
