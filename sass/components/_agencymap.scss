@@ -2,12 +2,22 @@
     display: flex;
 	justify-content: space-between;
     padding: 15vh 5vw;
+    position: relative;
+    overflow: hidden;
     background-color: #F8F8F8;
 
+    img{
+        width: 430px;
+        height: 430px;
+        position: absolute;
+        bottom: -12vh;
+        left: -8vw;
+    }
     h1{
         width: 25vw;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 700;
+        z-index: 10;
         color: #EE3325;
     }    
     .agencymap-search, .agencymap-map{
@@ -44,9 +54,6 @@
         iframe{
             width: 100%;
             height: 80%;
-        }
-        p{
-          
         }
     }
 }

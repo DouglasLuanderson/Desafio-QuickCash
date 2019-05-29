@@ -1,0 +1,22 @@
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+
+    .partners-block{
+        width: 70vw;
+        
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:2vh 0 10vh 0; 
+
+            img{
+                height: 10vh;
+            }
+        }
+         
+    }
+}
