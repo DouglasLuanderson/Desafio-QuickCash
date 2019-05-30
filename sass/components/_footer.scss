@@ -8,7 +8,7 @@
         width: 30vw;
 
         img{
-            width: 100%;
+            width: 90%;
             // height: 100%;
         }
     }
@@ -16,21 +16,31 @@
         width: 50vw;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         align-items: flex-start;
+        padding-top: 10vh;
+        line-height: 5vh;
+        
+        
+        span{
+            display: flex;
+            margin-top: 2vh;
+            color: #fff;
+        } 
     }
     .footer-blockcopyright{
-        
+         margin-top: 5vh;
     }
     .footer-blocklinks{
         width: 15vw;
         line-height: 4vh;
-        background-color: blue;
         a{
             color: #fff;
         }
         .link{
             margin-bottom: 5vh;
+        }
+        img{
+            height: 20vh;
         }
     }
 }

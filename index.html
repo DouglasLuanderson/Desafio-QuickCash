@@ -3,8 +3,8 @@
 <head>
 	<title>QuickCash</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initialscale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header id="header">
@@ -49,11 +49,45 @@
 		</section>
 		<section class="simulate">
 			<div class="convert">
+				<div class="convert-block"> 
+					<div class="convert-blockFrom">
+						<p>From:</p>
+						<span>
+							<img src=assets/Costa-do-marfim.png alt="Costa-do-marfim" name="BRL">
+							<select name="countryFrom" id="from">
+								<option value="BRL">Brazil</option>
+								<option value="USD">EUA</option>
+								<option value="EUR">Inglaterra</option>
+							</select>
+						</span>
+					</div>
+					<div class="convert-blockTo">
+						<p>To:</p>
+						<span>
+							<img src=assets/mali.png alt="Mali" name="EUA">
+							<select name="countryTo" id="to">
+								<option value="USD">EUA</option>
+								<option value="EUR">Inglaterra</option>
+								<option value="BRL">Brazil</option>
+							</select>
+						</span>
+					</div>
+				</div>
+				<div class="convert-values">
+					<div class="convert-valuesSend">
+						<p>Your send</p>
+						<input type="text" id="coin">
+					</div>
+					<div class="convert-valueReceive">
+						<p>They receive</p>
+						<input type="text" id="result">
+					</div>
+				</div>	
 			</div>
-			<div>
+			<div class="countries">
 				<h1>Simulate your transfer</h1>
 				<p>QuickCash is currently available in these countries:</p>
-				<span><img src="assets/Costa-do-marfim.png" alt="country">Ivony</span>
+				<span><img src="assets/Costa-do-marfim.png" alt="country">Ivory</span>
 				<span><img src="assets/BurkinaFaso.png" alt="Country">Burkina</span>
 				<span><img src="assets/mali.png" alt="country">Mali</span>
 				<span><img src="assets/Niger.png" alt="">Niger</span>
@@ -181,15 +215,15 @@
 			<img src="assets/logo-footer.png" alt="logo footer">
 			<div>
 				<span>
-					<img src="" alt="">
+					<img src="assets/locationicon.svg" alt="">
 					<p>Plateau Tour BIAO, 13th Floor - 01 BP 10804 Abidjan 01 </p>
 				</span>
 				<span>
-					<img src="" alt="">
+					<img src="assets/phoneicon.svg" alt="">
 					<p>Tel : (225) 20 32 25 35</p>
 				</span>
 				<span>
-					<img src="" alt="">
+					<img src="assets/emailicon.svg" alt="">
 					<p>Email : infos@quickcashci.com</p>					
 				</span>
 			</div>
@@ -206,5 +240,7 @@
 			<img src="assets/circlewhite.svg" alt="image circle">
 		</div>	
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>
