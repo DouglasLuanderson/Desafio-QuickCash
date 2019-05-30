@@ -24,6 +24,18 @@ $( document ).ready(function() {
 
 });
 
+$(function(){
+	
+	$('.navbarMobile-text').click(function(){
+		$('.navbarMobile-menu').css('display','flex');
+	});
+	$('.botaoSair').click(function(){
+		$('.navbarMobile-menu').css('display','none');
+	});
+	$('.contatos').click(function(){
+		$('.navbarMobile-menu').css('display','none');
+	});
+});
 
 
 

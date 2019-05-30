@@ -3,21 +3,34 @@
 <head>
 	<title>QuickCash</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="assets/logo.svg">
+	<link rel="icon"  href="assets/logoaba.png" >
 </head>
 <body>
 	<header id="header">
 		<div class="menu">
 			<img src="assets/logo.svg" alt="logo">
-			<nav>
+			<nav class="navbar">
 				<a href="">About us</a>
 				<a href="">Our Products</a>
 				<a href="">Contact</a>
 				<a href="">en/fr</a>
 			</nav>
-		</div>
+
+			<nav class="navbarMobile">
+				<div class="navbarMobile-text">menu</div>
+				<div class="navbarMobile-menu">
+					<div class="close">
+						<a href="" class="close-icon">X</a>
+					</div>
+					<a href="#">About us</a>
+					<a href="#">Our Products</a>
+					<a href="#contatos">Contacts</a>
+					<a href="">en/fr</a>
+				</div>
+			</nav> 
+		</div>   
 		<div class="banner">
 			<p>Breaking the boundaries between urban and rural areas!</p>
 		</div>
@@ -97,7 +110,14 @@
 		</section>
 		<section class="history">
 			<div class="slide">
-
+				<div class="slide-block">
+					<label for="">
+						<img class="slide-block-arrow"	src="assets/seta.svg" alt="arrow">
+						<img class="slide-block-image" src="assets/depoimento1.png" alt="image remark">
+						<img class="slide-block-arrow" src="assets/seta2.svg" alt="arrow">				
+					</label>
+					<input type="checkbox">
+				</div>
 			</div>
 			<p>Writing a new page in the history of money transfer along with you!</p>
 			<div class="ballbig">
@@ -142,31 +162,32 @@
 		</section>
 		<section class="socialimpact">
 			<div class="socialimpact-impact">
+				<h1>Social Impact</h1>
 				<div class="socialimpact-impact-block">
 					<img  src="assets/forum-mondiale.png" alt="">
-					<div>
-						<p>Quickcash au forum mondiale des droits de l’homme au Maroc</p>
-						<p>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
+					<div class="socialimpact-impact-blockText">
+						<p class="socialimpact-impact-subtitle">Quickcash au forum mondiale des droits de l’homme au Maroc</p>
+						<p class="socialimpact-impact-paragraph">Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
+					</div>
+				</div>
+				<div class="socialimpact-impact-block socialimpact-impact-block--reverse">
+					<img  src="assets/forum-mondiale.png" alt="">
+					<div class="socialimpact-impact-blockText">
+						<p class="socialimpact-impact-subtitle">Quickcash au forum mondiale des droits de l’homme au Maroc</p>
+						<p class="socialimpact-impact-paragraph">Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
 					</div>
 				</div>
 				<div class="socialimpact-impact-block">
 					<img  src="assets/forum-mondiale.png" alt="">
-					<div>
-						<p>Quickcash au forum mondiale des droits de l’homme au Maroc</p>
-						<p>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
-					</div>
-				</div>
-				<div class="socialimpact-impact-block">
-					<img  src="assets/forum-mondiale.png" alt="">
-					<div>
-						<p>Quickcash au forum mondiale des droits de l’homme au Maroc</p>
-						<p>Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
+					<div class="socialimpact-impact-blockText">
+						<p class="socialimpact-impact-subtitle">Quickcash au forum mondiale des droits de l’homme au Maroc</p>
+						<p class="socialimpact-impact-paragraph">Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
 					</div>
 				</div>	
 			</div>
 			<div class="socialimpact-news">
 				<h1>News</h1>
-				<div>
+				<div class="">
 					<p>Participation of Patricia Zoundi Yao, CEO of QuickCash in the seventh annual Global Entrepreneurship Summit (GES)</p>
 					<p>Participation of Patricia Zoundi Yao, CEO of QuickCash in the seventh annual Global Entrepreneurship Summit (GES)</p>
 				</div>
@@ -242,6 +263,7 @@
 		</div>	
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>

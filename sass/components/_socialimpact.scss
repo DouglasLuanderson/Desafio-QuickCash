@@ -12,6 +12,14 @@
         justify-content: space-between;
         align-items: center;
 
+        h1{
+            font-size: 2rem;
+            color: #0083CA;
+            font-weight: 600;
+            align-self: flex-start;
+            margin-bottom: 2vh;
+        }
+
         .socialimpact-impact-block{
             width: 100%;
             min-height: 25vh;
@@ -26,9 +34,22 @@
             img{
                 height: 25vh;
             }
-            div{
-                padding: 5%;
+            .socialimpact-impact-blockText{
+                padding: 3%;
+
+                .socialimpact-impact-subtitle{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-bottom: 1vh;
+                }
+                .socialimpact-impact-paragraph{
+                    font-family: 'Muli';
+                    font-weight: 300;
+                }
             }
+        }
+        .socialimpact-impact-block--reverse{
+            flex-direction: row-reverse;
         }
     }
     .socialimpact-news{
@@ -51,10 +72,10 @@
     }
     .button{
         position: absolute;
-        bottom: 10vh;
+        bottom: 12vh;
         left: 27vw;
         border: 0;
         color: #0083CA;
-        background-color: #FFF3F2;
+        background-color: #FFF;
     }
 }

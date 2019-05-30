@@ -13,7 +13,7 @@
         img{
             height: 5vh;
         }
-        nav{
+        .navbar{
             width: 45vw;
             display: flex;
             justify-content: space-around;
@@ -25,6 +25,9 @@
             margin: 5px;
             color: #EE3325;
         }
+        .navbarMobile{
+            display: none;
+        }         
     }
     .banner{ 
         min-height: 85vh; 
@@ -53,4 +56,50 @@
         left: 0;
         background: linear-gradient(to bottom, rgba(0,131,202,0) 0%, rgba(0,131,202,0.62) 40%,  rgba(0,131,202,1) 80%,  rgba(0,131,202,1) 90%, rgba(0,131,202,1) 100%);
     }    
+}
+
+@media  (max-width: 768px) {
+    #header{
+        position: relative;
+
+        .menu{
+            .navbar{
+                display: none;
+            }
+            .navbarMobile{
+                display: block;
+            }
+            .navbarMobile-text {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                color: rgba(238,51,37,1);
+                font-size: 0.8rem;
+                margin-right: 20px;
+                display: block;
+                cursor: pointer;                
+            }
+            .navbarMobile-menu{  
+                width: 100%;
+                height: 100vh;              
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                line-height: 15vh;
+                right: 0;
+                top: 0;
+                background-color: #fff;
+                display: none;
+
+                .close-icon{
+                    font-size: 4rem;              
+                }
+                a{
+                    font-size: 2rem;
+                    z-index: 10;
+                }
+            }
+        }
+    }
 }

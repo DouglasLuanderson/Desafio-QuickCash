@@ -11,7 +11,31 @@
     .slide{
         width: 55vw;
         min-height: 80vh;
-		background-color:white;
+        position: relative;
+        
+        
+        .slide-block{
+            display: flex;
+            justify-content: center;
+
+            label{
+                width: 90%;
+
+                .slide-block-image{
+                    height: 85vh;
+                    margin: 0 2vw;
+                }
+                .slide-block-arrow{
+                    height: 5vh;
+                    position: absolute;
+                    top: 40vh;
+                }  
+            } 
+            input{
+                display: none;
+
+            }    
+        }
     }
     p{  
         width: 25vw;
