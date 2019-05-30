@@ -4,13 +4,14 @@
     flex-direction: column;
 
     .menu{
-        min-height: 15vh;
+        min-height: 12vh;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 2vh 5vw;
 
         img{
-            height: 10vh;
+            height: 5vh;
         }
         nav{
             width: 45vw;
@@ -20,8 +21,9 @@
             font-size: 1.1rem;           
         }
         a{
-            color: #EE3325;
+            font-weight: 700;
             margin: 5px;
+            color: #EE3325;
         }
     }
     .banner{ 
