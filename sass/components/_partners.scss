@@ -20,3 +20,20 @@
          
     }
 }
+@media (max-width:425px){
+    .partners{            
+        .partners-block{
+            width: 80vw;;
+
+            div{
+                width: 90vw;
+                min-height: 40vh;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                padding: 2%;   
+            }
+             
+        }
+    } 
+}

@@ -44,3 +44,19 @@
         }
     }
 }
+@media (max-width:425px){
+    .footer{
+        flex-direction: column;
+        
+        .footer-blockimage{
+            img{
+                display: none;
+            }
+        }
+        .footer-blocklinks{
+            img{
+                display: none;
+            }
+        }
+    }
+}

@@ -53,7 +53,7 @@
 				color: #6B6B6B;
 			}
 			input{
-				width: 40vw;
+				width: 100%;
 				min-height: 5vh;
 				font-size: 2rem;
 				border: none;
@@ -81,13 +81,30 @@
 			align-items: center;
 			font-size: 1.1rem;
 			font-weight: 600;			
-			margin-top: 4vh;
+			margin-top: 2.5vh;
 
 			img{
 				width: 40px;
 				height: 40px;
 				margin-right: 2vw;
 				border-radius: 50%;
+			}
+		}
+	}
+}
+@media (max-width:425px){
+	.simulate{
+		flex-direction: column-reverse;
+
+		.convert{
+			width: 100%;
+			margin-top: 10vh;
+		}
+		.countries{
+			width: 65vw;
+
+			p{
+				margin-bottom: 5vh;
 			}
 		}
 	}

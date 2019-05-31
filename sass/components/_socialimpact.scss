@@ -79,3 +79,17 @@
         background-color: #FFF;
     }
 }
+@media (max-width:768px){
+	.socialimpact{
+        flex-direction: column;
+
+        .socialimpact-impact{
+            .socialimpact-impact-block--reverse{
+                flex-direction: column;
+            }
+            .socialimpact-impact-block{
+                flex-direction: column;
+            }            
+        }        
+    }
+}

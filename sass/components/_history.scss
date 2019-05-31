@@ -39,7 +39,7 @@
     }
     p{  
         width: 25vw;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 900;
         font-style: italic;
         color: #fff;
@@ -56,3 +56,39 @@
     }
     
 }
+@media (max-width: 768px){
+    .history{
+        flex-direction: column-reverse;
+        padding: 15vh 0;
+
+        p{
+            width: 70%;
+            margin-bottom: 5vh;
+        }
+        .slide{
+            width: 100%;
+
+            .slide-block{ 
+                label{
+                    width: 100%;
+
+                    .slide-block-image{
+                        width: 90%;
+                    }
+                    .slide-block-arrow{
+                        bottom: 0;
+                        left: 75%;
+                        margin-top: 50vh;
+                    }
+                    .slide-block-arrow--margin{
+                        margin-left: -50vw;
+                    }
+                }
+            }
+        }
+        .ballbig{
+            display: none;
+        }
+    }
+    
+}  

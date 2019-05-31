@@ -15,15 +15,29 @@
         margin: 0 auto;
         
         div{
-            width: 13vw;
+            width: 15vw;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             text-align: center;
-            margin: 10vh 0;
+            margin: 8vh 2vw;
             
             img{
                 height: 40%;        
+            }
+        }
+    }
+}
+@media (max-width:425px){
+    .products{
+        text-align: center;
+        
+        .productsBlock{
+            flex-wrap: wrap;
+            justify-content: center;
+
+            div{
+                width: 50vw;
             }
         }
     }
