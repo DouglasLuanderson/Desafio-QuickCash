@@ -40,6 +40,87 @@
         background-size: cover;
         background-repeat: no-repeat;
         
+        .banner-contact{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 15vw;
+            height: 10vh;
+            border-radius: 30px;
+            padding: .8rem;
+            position: absolute;
+            right: 5vw;
+            bottom: 20vh;
+            z-index: 10;
+            background-color: #ee3325;
+            display: none;
+
+            img{
+                height: 7vh;
+            }
+
+            p{
+                width: 50%;
+                font-size: 1rem;
+            }
+        }
+        form{
+            width: 22vw;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            border-radius: 10px;
+            background-color: #fff;
+            display: none;
+
+            .sheet{
+                height: 7vh;
+                flex-direction: row;
+                align-items: center;
+                color: #fff;
+                padding: 5% 5% 5% 28%; 
+                border-radius: 10px 10px 0 0 ;
+                background-color: #EE3325;
+
+                span{
+                    font-size: 2rem;
+                }
+
+                p{
+                    font-size: 1rem;
+                }
+            }
+            .submit{
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-right: 10%;
+
+                .inputWhite, .inputRed{
+                    width: 40%;
+                    height: 5vh;
+                    border: 1px solid #EE3325;
+                    color: #EE3325;
+                    background-color: #fff;
+                }
+                .inputRed{
+                    border: 1px solid #EE3325;
+                    color: #fff;
+                    background-color: #EE3325;
+                    margin-left: 1vw;
+                }
+            }
+            
+            div{
+                display: flex;
+                flex-direction: column;
+                padding: 2%;
+
+                input, textarea{
+                    border: 1px solid #D2D2D2;
+                    border-radius: 5px;
+                }
+            }
+        }
         
         p{
             width: 35vw;
@@ -92,6 +173,7 @@
                 right: 0;
                 top: 0;
                 background-color: #fff;
+                z-index: 20;
                 display: none;
 
                 .close-icon{
