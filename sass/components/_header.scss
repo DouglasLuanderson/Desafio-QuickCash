@@ -1,4 +1,4 @@
-#header{
+#header, .header{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,8 +10,12 @@
         align-items: center;
         padding: 2vh 2vw 2vh 5vw;
 
-        img{
+        .menu-logo{
             height: 5vh;
+
+            img{
+                height: 100%;
+            }
         }
         .navbar{
             width: 45vw;
@@ -78,7 +82,7 @@
         background-color: #ee3325;
 
         img{
-            height: 6vh;
+            height: 5vh;
             margin-right: 0.8vw;
         }
 
@@ -157,7 +161,7 @@
 }
 
 @media  (max-width: 768px) {
-    #header{
+    #header, .header{
         position: relative;
 
         .menu{
@@ -169,10 +173,11 @@
             }
             .navbarMobile-text {
                 font-family: 'Montserrat', sans-serif;
-                font-weight: 700;
+                font-weight: 300;
                 color: rgba(238,51,37,1);
-                font-size: 0.8rem;
-                margin-right: 20px;
+                font-size: 1rem;
+                margin-right: 2vw;
+                text-transform: uppercase;
                 display: block;
                 cursor: pointer;                
             }
@@ -198,22 +203,71 @@
                     font-size: 2rem;
                     z-index: 10;
                 }
+                .link{
+                    color: #000;
+                    font-size: 0.7rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
             }
         }
     }
 }
 @media (max-width: 425px){
-    #header{
+    #header, .header{
         .banner{
             align-items: flex-end;
             background-position: center;
 
             p{
-                width: 100%;
-                font-size: 1.8rem;
+                min-width: 100%;
+                font-size: 1.8rem !important;
                 padding: 0 0 30% 10%;
             }
         }
+        .banner-contact{
+            bottom: 5vh;            
+
+            img{
+                margin: 0;
+            }
+            .banner-contactText{
+                display: none;
+            }
+            
+        }
+        form{
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+
+            .sheet{
+                border-radius: 0;
+            }
+            label{
+                margin-top: 2vh;
+            }
+            div{
+                input{
+                    height: 6vh;
+                    margin-top: 2vh;
+                }
+                textarea{
+                    height: 35vh;
+                }
+            
+            }
+        }
+        
     }
     
-}  
+}
+// page about
+
+.header{
+    min-height: 10vh;
+}
