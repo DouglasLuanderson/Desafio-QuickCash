@@ -9,13 +9,13 @@
 </head>
 <body>
 	<header id="header">
-		<div class="menu">
+		<div class="menu close">
 			<img src="assets/logo.svg" alt="logo">
 			<nav class="navbar">
 				<a href="">About us</a>
 				<a href="">Our Products</a>
 				<a href="">Contact</a>
-				<a href="">en/fr</a>
+				<a class="link" href="">en/fr</a>
 			</nav>
 
 			<nav class="navbarMobile">
@@ -31,16 +31,17 @@
 				</div>
 			</nav> 
 		</div>   
-		<div class="banner">
-			<p>Breaking the boundaries between urban and rural areas!</p>
-			<div class="banner-contact">
-				<img src="assets/noun_support_1973675.svg" alt="">  
+		<div class="banner close">
+			<p class="banner-text">Breaking the boundaries between urban and rural areas!</p>			
+		</div>
+		<div class="banner-contact">
+				<img src="assets/noun_support_1973675.svg" alt="image button">  
 				<p class="banner-contactText">Contact</p>
 			</div>
 			<form>
 				<div class="sheet">
 					<p>contact us</p>
-					<span>-</span>
+					<span class="close">-</span>
 				</div>
 				<div>
 					<label for="name">Name</label>
@@ -55,14 +56,13 @@
 					<textarea id="dates" name="dates" rows="8" ></textarea>
 				</div>
 				<div class="submit">
-					<input class="inputWhite" type="submit" value="Cancel" />
-					<input class="inputRed" type="submit" value="Send" />  
+					<input class="inputWhite close" type="reset" value="Cancel" />
+					<input class="inputRed close" type="submit" value="Send" />  
 				</div>
 			</form>					 
-		</div>
 	</header>
 	<main>
-		<section class="products">
+		<section class="products close">
 			<h1>Our Products</h1>
 			<div class="productsBlock">
 				<div>
@@ -135,15 +135,32 @@
 			</div>
 		</section>
 		<section class="history">
-			<div class="slide">
+			<div id="slide">
+				<img class="slide-block-arrowLeft slide-block-arrowLeft--margin" src="assets/seta2.svg">
+				<img class="slide-block-arrowRight" src="assets/seta.svg">
 				<div class="slide-block">
-					<label for="">
-						<img class="slide-block-arrow slide-block-arrow--margin" src="assets/seta.svg" alt="arrow">
-						<img class="slide-block-image" src="assets/depoimento1.png" alt="image remark">
-						<img class="slide-block-arrow" src="assets/seta2.svg" alt="arrow">				
-					</label>
-					<input type="checkbox">
+					<img class="slide-block-image" src="assets/depoimento1.png" alt="image remark">
+					<img class="slide-block-image" src="assets/depoimento2.png" alt="image remark">
+					<img class="slide-block-image" src="assets/depoimento3.png" alt="image remark">     
+				</div>  
 				</div>
+			
+				<!-- <div class="slider_option">
+				<input type="checkbox" id="checkbox">
+				<label for="checkbox">Autoplay Slider</label>
+				</div>  -->
+					
+					<!-- <img class="slide-block-arrow slide-block-arrow--margin" src="assets/seta.svg" alt="arrow">
+					<img class="slide-block-arrow" src="assets/seta2.svg" alt="arrow">	
+					<div class="slide-block">
+						<img class="slide-block-image" src="assets/depoimento1.png" alt="image remark">
+						<img class="slide-block-image" src="assets/depoimento2.png" alt="image remark">
+						<img class="slide-block-image" src="assets/depoimento3.png" alt="image remark">  -->
+						<!-- <label for="">						
+							<img class="slide-block-image" src="assets/depoimento1.png" alt="image remark">
+							<img class="slide-block-arrow" src="assets/seta2.svg" alt="arrow">				
+						</label>
+						<input type="checkbox"> -->
 			</div>
 			<p>Writing a new page in the history of money transfer along with you!</p>
 			<div class="ballbig">
@@ -209,35 +226,36 @@
 						<p class="socialimpact-impact-subtitle">Quickcash au forum mondiale des droits de l’homme au Maroc</p>
 						<p class="socialimpact-impact-paragraph">Après le Brésil s’est déroulée au Maroc du 27 au 30 Novembre 2014, la deuxième édition du Forum mondial des droits de l’Homme. Ce Forum a rassemblé pendant 4 jours plus de 8.000 participants sur divers thématiques concernant les Droits de l’Homme.</p>
 					</div>
-				</div>	
+				</div>
+				<button class="button">
+					<p>< Show more ></p>
+				</button>	
 			</div>
 			<div class="socialimpact-news">
 				<h1>News</h1>
-				<div class="">
-					<p>Participation of Patricia Zoundi Yao, CEO of QuickCash in the seventh annual Global Entrepreneurship Summit (GES)</p>
-					<p>Participation of Patricia Zoundi Yao, CEO of QuickCash in the seventh annual Global Entrepreneurship Summit (GES)</p>
+				<div class="socialimpact-news-block">
+					<p class="socialimpact-news-subtitle">Participation of Patricia Zoundi Yao, CEO of QuickCash in the seventh annual Global Entrepreneurship Summit (GES)</p>
+					<p class="socialimpact-news-text">The CEO of QuickCash, Mrs. Patricia Zoundi Yao, participated in the seventh annual Global Entrepreneurship Summit (GES), held from the 22nd to the 24th of June 2016, at Stanford University in Silicon Valley, California. This summit gathered entrepreneurs at all stages of business development and featured new commitments to promote entrepreneurship as a driver for economic growth, social inclusion, and secure communities.</p>
 				</div>
-				<div>
-					<p>Quickcash for participation in the campain « ewaste » MTN Ivory Coast</p>
-					<p>Launched October 7, 2015, the campaign "EWASTE" why MTN Ivory Coast and were ERICSON partnership lasted four (4) months and ended on February 7th with a ceremony at the Pullman Hotel Plateau.</p>
+				<div class="socialimpact-news-block socialimpact-news-block--border">
+					<p class="socialimpact-news-subtitle">Quickcash for participation in the campain « ewaste » MTN Ivory Coast</p>
+					<p class="socialimpact-news-text">Launched October 7, 2015, the campaign "EWASTE" why MTN Ivory Coast and were ERICSON partnership lasted four (4) months and ended on February 7th with a ceremony at the Pullman Hotel Plateau.</p>
 				</div>
-				<div>
-					<p>QuickCash honored at the National Day of Excellence 2014</p>
-					<p>Patricia ZOUNDI Mrs. YAO, CEO of QuickCash received the award of youth entrepreneurship on Friday 1st August at the National Day of Excellence. Held at the presidential palace, the ceremony was graced by the presence of the presidential couple, members of the government, diplomatic and responsible institution.</p>
+				<div class="socialimpact-news-block">
+					<p class="socialimpact-news-subtitle">QuickCash honored at the National Day of Excellence 2014</p>
+					<p class="socialimpact-news-text">Patricia ZOUNDI Mrs. YAO, CEO of QuickCash received the award of youth entrepreneurship on Friday 1st August at the National Day of Excellence. Held at the presidential palace, the ceremony was graced by the presence of the presidential couple, members of the government, diplomatic and responsible institution.</p>
 				</div>
 				<button>
 					<p>< Show more News ></p>
 				</button>
 			</div>
-			<button class="button">
-				<p>< Show more ></p>
-			</button>
+			
 		</section>
 		<section class="partners">
 			<div class="partners-block">
 				<p>Banking Partners</p>
 				<div>
-					<img src="assets/asusu.png" alt="partner assuso">
+					<img src="assets/asusu.png" alt="partner asusu">
 					<img src="assets/banque-populaire.png" alt="partner banque-populaire">
 					<img src="assets/boa-vert-bf.png" alt="partner boa-vert-bf">
 					<img src="assets/sonapost.png" alt="partner sonapost">
@@ -276,7 +294,7 @@
 				</span>
 			</div>
 			<div class="footer-blockcopyright">
-				<p>Copyright © 2019 QuickCash - All Rights Reserved</p>
+				<p class="footer-blockcopyright-text">Copyright © 2019 QuickCash - All Rights Reserved</p>
 				<p>Developed by Vai na WEb</p>
 			</div>
 		</div>	

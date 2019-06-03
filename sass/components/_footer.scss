@@ -2,13 +2,16 @@
     min-width: 40vh;
     display: flex;
     justify-content: space-between;
+    padding: 2%;
     background-color: #EE3325;
+    
 
     .footer-blockimage{
         width: 30vw;
+        align-self: center;
 
         img{
-            width: 90%;
+            width: 75%;
         }
     }
     .footer-blockaddress, .footer-blocklinks{
@@ -16,8 +19,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 10vh;
-        line-height: 5vh;
+        padding-top: 7vh;
+        line-height: 4vh;
         
         
         span{
@@ -27,7 +30,15 @@
         } 
     }
     .footer-blockcopyright{
-         margin-top: 5vh;
+        font-family: 'montserrat alternates';
+        margin-top: 5vh;
+        
+
+        .footer-blockcopyright-text{
+            color: rgba(0, 0, 0, 0.16);
+            font-weight: 600;
+        }
+
     }
     .footer-blocklinks{
         width: 15vw;
@@ -39,7 +50,7 @@
             margin-bottom: 5vh;
         }
         img{
-            height: 20vh;
+            height: 15vh;
         }
     }
 }

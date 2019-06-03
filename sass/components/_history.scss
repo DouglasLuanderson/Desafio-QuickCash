@@ -3,38 +3,78 @@
     justify-content: space-between;
     align-items: center;
     padding: 15vh 5vw;
-    position: relative;
+    // position: relative;
     overflow: hidden;
 	color: #fff;
     background: linear-gradient(to bottom, rgba(0,131,202,1) 0%, rgba(0,131,202,1) 50%, rgba(0,89,202,1) 100%);
     
-    .slide{
+    #slide{
         width: 55vw;
-        min-height: 80vh;
+        height: 87vh;
+        display: flex;
         position: relative;
+        overflow: hidden;
+        margin: 20px auto 0 auto;
+        border-radius: 4px;
+        // width: 55vw;
+        // min-height: 80vh;
+        // position: relative;
         
+        .slide-block-arrowRight, .slide-block-arrowLeft {
+            position: absolute;
+            top: 40%;
+            z-index: 99;
+            display: block;
+            padding: 4% 3%;
+            /* background: #2a2a2a; */
+            cursor: pointer;
+                    
+            // .slide-block-arrow{
+            // height: 5vh;
+            // position: absolute;
+            // top: 40vh;
+        } 
+        .slide-block-arrowLeft--margin{
+           right: 0;
+        } 
         
         .slide-block{
             display: flex;
             justify-content: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            min-width: 50vw;
+            min-height: 80vh;
+            // display: flex;
+            // justify-content: center;
 
-            label{
-                width: 90%;
+            .slide-block-image{
+                position: relative;    
+                padding: 3vh 5vw 3vh 2vw;
+                width: 50vw;
+                height: 85vh;
+                // height: 85vh;
+                // margin: 0 2vw;
+            }
+            
+            // label{
+            //     width: 90%;
 
-                .slide-block-image{
-                    height: 85vh;
-                    margin: 0 2vw;
-                }
-                .slide-block-arrow{
-                    height: 5vh;
-                    position: absolute;
-                    top: 40vh;
-                }  
-            } 
-            input{
-                display: none;
+            //     .slide-block-image{
+            //         height: 85vh;
+            //         margin: 0 2vw;
+            //     }
+            //     .slide-block-arrow{
+            //         height: 5vh;
+            //         position: absolute;
+            //         top: 40vh;
+            //     }  
+            // } 
+            // input{
+            //     display: none;
 
-            }    
+            // }    
         }
     }
     p{  
@@ -53,6 +93,7 @@
         border-radius: 50%;
         background-color: #FFF;
         opacity: 0.1;
+        display: none;
     }
     
 }
@@ -65,30 +106,51 @@
             width: 70%;
             margin-bottom: 5vh;
         }
-        .slide{
-            width: 100%;
+        #slide{
+            display: flex;
 
             .slide-block{ 
                 label{
                     width: 100%;
+                    display: flex;
+                    justify-content: center;
 
                     .slide-block-image{
-                        width: 90%;
+                        width: 70%;
+                        margin-right: 5vw;
                     }
                     .slide-block-arrow{
                         bottom: 0;
-                        left: 75%;
+                        left: 73%;
                         margin-top: 50vh;
                     }
-                    .slide-block-arrow--margin{
-                        margin-left: -50vw;
-                    }
+                   
                 }
+            }
+            .slide-block-arrowLeft--margin{
+                margin-left: 46vw;
             }
         }
         .ballbig{
             display: none;
         }
-    }
-    
+    }  
 }  
+@media (max-width: 450px){
+    .history{ 
+        .slide{
+            .slide-block{ 
+                label{
+                    .slide-block-image{
+                        width: 95%;
+                        height: 68vh;
+                        margin: 5vh 5vw 0 0;
+                    }
+                    .slide-block-arrow{
+                        margin-top: 40vh;
+                    }
+                }
+            }
+        }
+    }
+}

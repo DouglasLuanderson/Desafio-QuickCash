@@ -6,6 +6,8 @@
 
     .partners-block{
         width: 70vw;
+        color: rgba(107, 107, 107, 1);
+        font-weight: 300;
         
         div{
             display: flex;
@@ -21,9 +23,10 @@
     }
 }
 @media (max-width:425px){
-    .partners{            
+    .partners{ 
+        padding: 0;           
         .partners-block{
-            width: 80vw;;
+            width: 90vw;;
 
             div{
                 width: 90vw;

@@ -8,7 +8,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2vh 5vw;
+        padding: 2vh 2vw 2vh 5vw;
 
         img{
             height: 5vh;
@@ -25,6 +25,12 @@
             margin: 5px;
             color: #EE3325;
         }
+        .link{
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
         .navbarMobile{
             display: none;
         }         
@@ -40,89 +46,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         
-        .banner-contact{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 15vw;
-            height: 10vh;
-            border-radius: 30px;
-            padding: .8rem;
-            position: absolute;
-            right: 5vw;
-            bottom: 20vh;
-            z-index: 10;
-            background-color: #ee3325;
-            display: none;
-
-            img{
-                height: 7vh;
-            }
-
-            p{
-                width: 50%;
-                font-size: 1rem;
-            }
-        }
-        form{
-            width: 22vw;
-            display: flex;
-            flex-direction: column;
-            z-index: 10;
-            border-radius: 10px;
-            background-color: #fff;
-            display: none;
-
-            .sheet{
-                height: 7vh;
-                flex-direction: row;
-                align-items: center;
-                color: #fff;
-                padding: 5% 5% 5% 28%; 
-                border-radius: 10px 10px 0 0 ;
-                background-color: #EE3325;
-
-                span{
-                    font-size: 2rem;
-                }
-
-                p{
-                    font-size: 1rem;
-                }
-            }
-            .submit{
-                flex-direction: row;
-                justify-content: flex-end;
-                padding-right: 10%;
-
-                .inputWhite, .inputRed{
-                    width: 40%;
-                    height: 5vh;
-                    border: 1px solid #EE3325;
-                    color: #EE3325;
-                    background-color: #fff;
-                }
-                .inputRed{
-                    border: 1px solid #EE3325;
-                    color: #fff;
-                    background-color: #EE3325;
-                    margin-left: 1vw;
-                }
-            }
-            
-            div{
-                display: flex;
-                flex-direction: column;
-                padding: 2%;
-
-                input, textarea{
-                    border: 1px solid #D2D2D2;
-                    border-radius: 5px;
-                }
-            }
-        }
-        
-        p{
+        .banner-text{
             width: 35vw;
             font-size: 2.2rem;
             font-weight: bold;
@@ -138,6 +62,97 @@
         top: 56%;
         left: 0;
         background: linear-gradient(to bottom, rgba(0,131,202,0) 0%, rgba(0,131,202,0.62) 40%,  rgba(0,131,202,1) 80%,  rgba(0,131,202,1) 90%, rgba(0,131,202,1) 100%);
+    }
+    .banner-contact{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 9vh;
+        border-radius: 3rem;
+        padding: 0.8rem;
+        position: absolute;
+        right: 2vw;
+        bottom: 15vh;
+        cursor: pointer;
+        z-index: 10;
+        background-color: #ee3325;
+
+        img{
+            height: 6vh;
+            margin-right: 0.8vw;
+        }
+
+        .banner-contactText{
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+    form{
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        border-radius: 10px;
+        position: absolute;
+        right: 2vw;
+        bottom: 10vh;
+        background-color: #fff;
+        display: none;
+
+        .sheet{
+            height: 7vh;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            padding: 5% 5% 5% 30%; 
+            border-radius: 10px 10px 0 0 ;
+            background-color: #EE3325;
+
+           span{
+                font-size: 2rem;
+                cursor: pointer;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
+        .submit{
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 10%;
+
+            .inputWhite, .inputRed{
+                width: 40%;
+                height: 5vh;
+                border: 1px solid #EE3325;
+                cursor: pointer;
+                color: #EE3325;
+                background-color: #fff;
+            }
+            .inputRed{
+                border: 1px solid #EE3325;
+                color: #fff;
+                background-color: #EE3325;
+                margin-left: 1vw;
+            }
+        }
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            padding: 3%;
+
+            input, textarea{
+                border: 1px solid #D2D2D2;
+                border-radius: 5px;
+            }
+            input{
+                height: 4vh;;
+            }
+        }
     }    
 }
 
