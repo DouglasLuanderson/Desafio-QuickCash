@@ -197,7 +197,10 @@
                 display: none;
 
                 .close-icon{
-                    font-size: 4rem;              
+                    font-size: 2rem;     
+                    position: absolute;
+                    top: 0;
+                    right: 5vw;        
                 }
                 a{
                     font-size: 2rem;
